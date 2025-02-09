@@ -43,6 +43,19 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
+
+        // Macros    Ä = alt + 0196    Ä
+        de_Ae_k: de_Ae_k {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6>,
+                <&macro_release>,
+                <&kp LALT>;
+        };
     };
 
     ZMK_UNICODE_PAIR(de_aa,     de_ae_s,    de_Ae_k) //
