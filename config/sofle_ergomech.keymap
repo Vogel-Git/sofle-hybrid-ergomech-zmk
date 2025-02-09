@@ -1,6 +1,14 @@
 /*
  * Copyright (c) 2020 The ZMK Contributors
- *
+ * 
+ * Vogel-Git Version (Test)
+ * &ext_power EP_TOG    <->      &none
+ * ZMK_UNICODE_PAIR(   de_ae,      N0, N0,  E, N4,    N0, N0,  C, N4) // ä/Ä
+ * ZMK_UNICODE_PAIR(   de_oe,      N0, N0,  F, N6,    N0, N0,  D, N6) // ö/Ö
+ * ZMK_UNICODE_PAIR(   de_ue,      N0, N0,  F,  C,    N0, N0,  D,  C) // ü/Ü
+ * ZMK_UNICODE_PAIR(de_eszett,     N0, N0,  D,  F,    N1, E,   N9, E) // ß/ẞ
+ * &kp HOME 
+ * &kp END 
  * SPDX-License-Identifier: MIT
  */
 
@@ -83,14 +91,14 @@
 
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-            // |       | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |       |       |
+            // |       | INS  | PSCR | GUI   |       |      |                | PGUP | HOME |   ^   | END  |       |       |
             // |       | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
             // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans     &trans    &trans    &trans     &trans   &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans        &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans        &kp PG_UP  &kp HOME  &kp UP    &kp END    &none   &trans
 &trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK      &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
 &trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans     &trans    &trans    &trans     &trans   &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans     &trans    &trans    &trans     &trans
@@ -111,7 +119,7 @@
             label = "adjust";
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &none  &none  &none  &none  &none   &de_eszett
-&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &none  &none  &none  &none  &none   &de_ue
+&none              &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &none  &none  &none  &none  &none   &de_ue
 &none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none            &none  &none  &none  &none  &de_ae  &de_oe
 &none              &none            &none            &none            &none            &none            &none  &none  &none  &none  &none   &none
 &rgb_ug RGB_TOG    &none            &none            &none            &none            &none            &none  &none  &none  &none  &none
