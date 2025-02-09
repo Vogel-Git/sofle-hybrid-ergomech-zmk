@@ -45,6 +45,9 @@
         };
     };
 
+    ZMK_UNICODE_PAIR(de_aa,     de_ae_s,    de_Ae_k) //
+
+
     keymap {
         compatible = "zmk,keymap";
 
