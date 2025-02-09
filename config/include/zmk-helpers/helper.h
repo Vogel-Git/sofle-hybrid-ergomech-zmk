@@ -214,9 +214,9 @@
     UC_MACRO(name ## _upper, &kp U0 &kp U1 &kp U2 &kp U3) \
     UC_MODMORPH(name, &name ## _lower, &name ## _upper)
 
-#define ZMK_UNICODE_PAIRX(name, L, U) \
-    UC_MACRO(name ## _lower, &kp L) \
-    UC_MACRO(name ## _upper, &kp U) \
+#define ZMK_UNICODE_PAIRX(name, macro_one_param, macro_one_param) \
+    UC_MACRO(name ## _lower, &macro_one_param) \
+    UC_MACRO(name ## _upper, &macro_one_param) \
     UC_MODMORPH(name, &name ## _lower, &name ## _upper)
 
 /* ZMK_APPLY_MATRIX_TRANSFORM */
