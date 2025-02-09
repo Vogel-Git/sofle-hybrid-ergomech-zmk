@@ -30,6 +30,20 @@
             then-layer = <ADJUST>;
         };
     };
+    macros {
+        // Macros    ä = alt + 0228    ä
+        de_ae_s: de_ae_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8>,
+                <&macro_release>,
+                <&kp LALT>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
