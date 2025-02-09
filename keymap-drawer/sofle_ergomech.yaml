@@ -143,7 +143,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&de_eszett'
   - EP TOG
   - RGB HUD
   - RGB HUI
@@ -155,7 +155,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&de_ue'
   - ''
   - RGB BRD
   - RGB BRI
@@ -166,8 +166,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - '&de_ae'
+  - '&de_oe'
   - ''
   - ''
   - ''
