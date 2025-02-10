@@ -175,9 +175,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - '&ao_lower'
+  - '&ao_upper'
+  - {t: '&ao_lower', s: '&ao_upper'}
   - ''
   - ''
   - RGB TOG
