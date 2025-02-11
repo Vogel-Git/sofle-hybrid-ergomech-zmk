@@ -86,9 +86,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
-  - {t: ▽, type: trans}
+  - HOME
   - UP
-  - {t: ▽, type: trans}
+  - END
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
