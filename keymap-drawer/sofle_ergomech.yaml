@@ -86,10 +86,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
-  - {t: ▽, type: trans}
+  - HOME
   - UP
-  - {t: ▽, type: trans}
-  - '0'
+  - END
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LALT
@@ -144,7 +144,7 @@ layers:
   - ''
   - ''
   - ''
-  - EP TOG
+  - ''
   - RGB HUD
   - RGB HUI
   - RGB SAD
