@@ -2,6 +2,9 @@
  * Copyright (c) 2020 The ZMK Contributors
  * 
  * Vogel-Git Version (Test)
+ *
+ * !!! west.yml angepasst !!!
+ *
  * &ext_power EP_TOG    <->      &none
  * ZMK_UNICODE_PAIR(de_ae,      N0, N0,  E, N4,    N0, N0,  C, N4) // ä/Ä
  * ZMK_UNICODE_PAIR(de_oe,      N0, N0,  F, N6,    N0, N0,  D, N6) // ö/Ö
@@ -9,6 +12,7 @@
  * ZMK_UNICODE_PAIR(de_eszett,     N0, N0,  D,  F,    N1, E,   N9, E) // ß/ẞ
  * &kp HOME 
  * &kp END 
+ *
  * SPDX-License-Identifier: MIT
  */
 
