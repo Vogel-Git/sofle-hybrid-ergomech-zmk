@@ -1,6 +1,6 @@
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
+  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '&de_ss', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
+    Z, X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
   lower:
   - '&studio_unlock'
   - F1
@@ -86,10 +86,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
-  - {t: ▽, type: trans}
+  - HOME
   - UP
-  - {t: ▽, type: trans}
-  - '0'
+  - END
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LALT
@@ -143,8 +143,8 @@ layers:
   - ''
   - ''
   - ''
+  - '&de_ss'
   - ''
-  - EP TOG
   - RGB HUD
   - RGB HUI
   - RGB SAD
@@ -155,7 +155,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&de_ue_s'
   - ''
   - RGB BRD
   - RGB BRI
@@ -163,11 +163,11 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&de_Ae_k'
+  - '&de_Oe_k'
+  - '&de_Ue_k'
+  - '&de_oe_s'
+  - '&de_ae_s'
   - ''
   - ''
   - ''
