@@ -39,11 +39,6 @@
             if-layers = <1 2>;
             then-layer = <3>;
         };
-
-        test {
-            if-layers = <2>;
-            then-layer = <6>;
-        };
     };
 
     macros {
