@@ -248,7 +248,7 @@
 &trans  &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &trans
 &trans  &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &trans
 &trans  &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &trans
-&trans  &kp T   &kp T   &kp T   &kp T   &trans  &kp T   &kp T   &kp T   &kp T   &kp T   &trans
+&trans  &kp T   &kp T   &kp T   &kp T   &trans  &tog 3  &kp T   &kp T   &kp T   &kp T   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                                 &trans  &trans  &trans  &trans  &trans
             >;
