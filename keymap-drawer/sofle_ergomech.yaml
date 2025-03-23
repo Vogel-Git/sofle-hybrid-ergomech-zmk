@@ -305,7 +305,7 @@ layers:
   - T
   - T
   - {t: ▽, type: trans}
-  - T
+  - {t: adjust, h: toggle}
   - T
   - T
   - T
