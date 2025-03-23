@@ -36,13 +36,13 @@
         compatible = "zmk,conditional-layers";
 
         adjust_layer {
-            if-layers = <LOWER RAISE>;
-            then-layer = <ADJUST>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
 
-        Mous {
+        test {
             if-layers = <2>;
-            then-layer = <1>;
+            then-layer = <6>;
         };
     };
 
@@ -160,12 +160,12 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE   &kp N1    &kp N2    &kp N3     &kp N4     &kp N5   &kp N6     &kp N7     &kp N8        &kp N9    &kp N0    &de_ss
-&kp ESC     &kp Q     &kp W     &kp E      &kp R      &kp T    &kp Y      &kp U      &kp I         &kp O     &kp P     &kp BSPC
-&kp TAB     &kp A     &kp S     &kp D      &kp F      &kp G    &kp H      &kp J      &kp K         &kp L     &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z     &kp X     &kp C      &kp V      &kp B    &kp N      &kp M      &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
-&kp C_MUTE  &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp RET  &kp SPACE  &mo RAISE  &kp RCTRL     &kp RALT  &kp RGUI
-                                                               &kp ENTER  &kp RIGHT  &kp UP_ARROW  &kp LEFT  &kp DOWN
+&kp GRAVE   &kp N1    &kp N2    &kp N3     &kp N4  &kp N5   &kp N6     &kp N7     &kp N8        &kp N9    &kp N0    &de_ss
+&kp ESC     &kp Q     &kp W     &kp E      &kp R   &kp T    &kp Y      &kp U      &kp I         &kp O     &kp P     &kp BSPC
+&kp TAB     &kp A     &kp S     &kp D      &kp F   &kp G    &kp H      &kp J      &kp K         &kp L     &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z     &kp X     &kp C      &kp V   &kp B    &kp N      &kp M      &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
+&kp C_MUTE  &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &kp RET  &kp SPACE  &mo 2      &kp RCTRL     &kp RALT  &kp RGUI
+                                                            &kp ENTER  &kp RIGHT  &kp UP_ARROW  &kp LEFT  &kp DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_DN &inc_dec_kp PG_UP PG_UP>;
@@ -237,10 +237,10 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp M   &kp M           &kp M           &kp M            &kp M   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp M   &mkp MB1        &mmv MOVE_UP    &mkp MB2         &kp M   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp M   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp M   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp M   &kp M           &kp M           &kp M            &kp M   &trans
+&trans  &kp M   &kp M   &kp M   &kp M   &kp M   &kp M   &kp M           &kp M           &kp M            &kp M   &trans
+&trans  &kp M   &kp M   &kp M   &kp M   &kp M   &kp M   &mkp MB1        &mmv MOVE_UP    &mkp MB2         &kp M   &trans
+&trans  &kp M   &kp M   &kp M   &kp M   &kp M   &kp M   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp M   &trans
+&trans  &kp M   &kp M   &kp M   &kp M   &kp M   &kp M   &kp M           &kp M           &kp M            &kp M   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans           &trans
                                                 &trans  &trans          &trans          &trans           &trans
             >;
@@ -248,12 +248,23 @@
             label = "mouse";
         };
 
-        layer_5 {
+        test_layer {
             bindings = <
 &trans  &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &trans
 &trans  &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &trans
 &trans  &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &trans
 &trans  &kp T   &kp T   &kp T   &kp T   &trans  &kp T   &kp T   &kp T   &kp T   &kp T   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6
+&trans  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &trans
+&trans  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &trans
+&trans  &kp N6  &kp N6  &kp N6  &kp N6  &trans  &trans  &kp N6  &kp N6  &kp N6  &kp N6  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                                 &trans  &trans  &trans  &trans  &trans
             >;
