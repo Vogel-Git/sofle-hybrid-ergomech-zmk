@@ -28,6 +28,9 @@
 #define LOWER 1
 #define RAISE 2
 #define ADJUST 3
+#define MOUSE 4
+#define TEST 5
+#define TIEF 6
 
 / {
     // Activate ADJUST layer by pressing raise and lower
@@ -232,14 +235,13 @@
 
         mouse_layer {
             bindings = <
-&trans  &kp M   &kp M   &kp M   &kp M   &kp M   &kp M   &kp M           &kp M           &kp M            &kp M   &trans
-&trans  &kp M   &kp M   &kp M   &kp M   &kp M   &kp M   &mkp MB1        &mmv MOVE_UP    &mkp MB2         &kp M   &trans
-&trans  &kp M   &kp M   &kp M   &kp M   &kp M   &kp M   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp M   &trans
-&trans  &kp M   &kp M   &kp M   &kp M   &kp M   &kp M   &kp M           &kp M           &kp M            &kp M   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans           &trans
-                                                &trans  &trans          &trans          &trans           &trans
+&trans  &kp M   &kp M   &kp M   &kp M   &kp M   &kp M         &kp M           &kp M           &kp M            &kp M   &trans
+&trans  &kp M   &kp M   &kp M   &kp M   &kp M   &kp M         &mkp MB1        &mmv MOVE_UP    &mkp MB2         &kp M   &trans
+&trans  &kp M   &kp M   &kp M   &kp M   &kp M   &kp M         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp M   &trans
+&trans  &kp M   &kp M   &kp M   &kp M   &kp M   &kp M         &kp M           &kp M           &kp M            &kp M   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans          &trans           &trans
+                                                &trans        &trans          &trans          &trans           &trans
             >;
-
             label = "mouse";
         };
 
@@ -252,17 +254,19 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                                 &trans  &trans  &trans  &trans  &trans
             >;
+            label = "test";
         };
 
-        layer_6 {
+        tief_layer {
             bindings = <
 &trans  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6
 &trans  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &trans
 &trans  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &trans
-&trans  &kp N6  &kp N6  &kp N6  &kp N6  &trans  &trans  &kp N6  &kp N6  &kp N6  &kp N6  &trans
+&trans  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                                 &trans  &trans  &trans  &trans  &trans
             >;
+            label = "tief";
         };
     };
 };
