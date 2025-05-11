@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle_ergomech}
 layers:
   default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '&de_ss', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
-    Z, X, C, V, B, MUTE, N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
+    Z, X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
   lower:
   - '&studio_unlock'
   - F1
@@ -45,12 +45,12 @@ layers:
   - +
   - '{'
   - '}'
-  - {t: ▽, type: trans}
   - '['
   - ']'
   - ;
   - ':'
   - \
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -87,10 +87,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
-  - HOME
+  - {t: ▽, type: trans}
   - UP
-  - END
-  - ''
+  - {t: ▽, type: trans}
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LALT
@@ -175,13 +175,13 @@ layers:
   - ''
   - {t: mouse, h: toggle}
   - mouse
-  - RGB TOG
   - {t: test, h: toggle}
   - ''
   - ''
   - ''
   - ''
   - ''
+  - RGB TOG
   - ''
   - ''
   - ''
@@ -240,12 +240,12 @@ layers:
   - M
   - M
   - {t: lower, h: toggle, type: held}
+  - M
+  - M
+  - M
+  - M
+  - M
   - {t: ▽, type: trans}
-  - M
-  - M
-  - M
-  - M
-  - M
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -305,12 +305,12 @@ layers:
   - T
   - {t: lower, h: toggle}
   - lower
-  - {t: ▽, type: trans}
   - {t: adjust, h: toggle}
   - T
   - T
   - T
   - T
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -370,12 +370,12 @@ layers:
   - '6'
   - '6'
   - '6'
+  - '6'
+  - '6'
+  - '6'
+  - '6'
+  - '6'
   - {t: ▽, type: trans}
-  - '6'
-  - '6'
-  - '6'
-  - '6'
-  - '6'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
