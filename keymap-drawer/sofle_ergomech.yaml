@@ -303,8 +303,8 @@ layers:
   - T
   - T
   - T
-  - T
-  - {t: ▽, type: trans}
+  - {t: lower, h: toggle}
+  - lower
   - {t: ▽, type: trans}
   - {t: adjust, h: toggle}
   - T
