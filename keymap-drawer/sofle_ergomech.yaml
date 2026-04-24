@@ -1,9 +1,9 @@
 layout: {zmk_keyboard: sofle_ergomech}
 layers:
   default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, ENTER, RIGHT, UP, LEFT, DOWN]
+    X, C, V, B, N, M, ',', ., /, RSHFT, A, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, B]
   lower:
-  - '&studio_unlock'
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
@@ -51,22 +51,18 @@ layers:
   - ':'
   - \
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - A
+  - LGUI
+  - LALT
+  - LCTRL
+  - {t: lower, type: held}
+  - RET
+  - SPACE
+  - raise
+  - RCTRL
+  - RALT
+  - RGUI
   - B
-  - C
-  - D
-  - E
   raise:
   - BT CLR
   - {t: BT, h: '0'}
@@ -116,22 +112,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - A
+  - LGUI
+  - LALT
+  - LCTRL
+  - lower
+  - RET
+  - SPACE
+  - {t: raise, type: held}
+  - RCTRL
+  - RALT
+  - RGUI
   - B
-  - C
-  - D
-  - E
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
@@ -181,19 +173,15 @@ layers:
   - ''
   - ''
   - ''
-  - RGB TOG
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - ''
   - A
+  - LGUI
+  - LALT
+  - LCTRL
+  - {t: lower, type: held}
+  - RET
+  - SPACE
+  - {t: raise, type: held}
+  - RCTRL
+  - RALT
+  - RGUI
   - B
-  - C
-  - D
-  - E
