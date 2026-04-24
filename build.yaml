@@ -14,9 +14,9 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: sofle_ergomech_left nice_view_adapter nice_view 
+    shield: sofle_ergomech_left nice_view_adapter_ergomech nice_view 
     snippet: zmk-usb-logging
   - board: seeeduino_xiao_ble
-    shield: sofle_ergomech_right nice_view_adapter nice_view 
+    shield: sofle_ergomech_right nice_view_adapter_ergomech nice_view 
   - board: seeeduino_xiao_ble
     shield: settings_reset
