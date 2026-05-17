@@ -111,7 +111,7 @@ layers:
   - PASTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: mause, h: toggle}
   - '&less_Than'
   - '&greater_Than'
   - '&pipe'
@@ -197,3 +197,68 @@ layers:
   - C
   - D
   - E
+  mause:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp MCLK'
+  - ''
+  - ''
+  - ''
+  - ESC
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&msc SCRL_UP'
+  - '&msc SCRL_LEFT'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_RIGHT'
+  - ''
+  - BSPC
+  - TAB
+  - CUT
+  - COPY
+  - PASTE
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&msc SCRL_DOWN'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - ''
+  - ''
+  - LSHFT
+  - CUT
+  - COPY
+  - PASTE
+  - ''
+  - {t: default, h: toggle}
+  - '&mkp RCLK'
+  - '&mkp MB4'
+  - '&mkp MB5'
+  - ''
+  - ''
+  - RSHFT
+  - ''
+  - LGUI
+  - LALT
+  - LCTRL
+  - ''
+  - ''
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - RCTRL
+  - RALT
+  - RALT
+  - '&mkp LCLK'
+  - '&mmv MOVE_RIGHT'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
