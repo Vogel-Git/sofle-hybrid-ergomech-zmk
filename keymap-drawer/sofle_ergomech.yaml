@@ -1,7 +1,8 @@
 layout: {zmk_keyboard: sofle_ergomech}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
+  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', ESC, Q, W, E, R, T, Z, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Y,
+    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, NUBS, ENTER, '&mmv MOVE_RIGHT', '&mmv MOVE_UP', '&mmv MOVE_LEFT',
+    '&mmv MOVE_DOWN']
   lower:
   - '&studio_unlock'
   - F1
@@ -62,11 +63,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
+  - RET
+  - '&mmv MOVE_RIGHT'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
   raise:
   - BT CLR
   - {t: BT, h: '0'}
@@ -79,7 +80,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '-'
   - {t: ▽, type: trans}
   - INS
   - PSCRN
@@ -87,11 +88,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
-  - {t: ▽, type: trans}
+  - HOME
   - UP
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
+  - END
+  - ']'
+  - '['
   - {t: ▽, type: trans}
   - LALT
   - LCTRL
@@ -110,8 +111,8 @@ layers:
   - COPY
   - PASTE
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: numbers, h: toggle}
+  - {t: mouse, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -127,11 +128,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
+  - RET
+  - '&mmv MOVE_RIGHT'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
@@ -145,7 +146,7 @@ layers:
   - ''
   - ''
   - ''
-  - EP TOG
+  - ''
   - RGB HUD
   - RGB HUI
   - RGB SAD
@@ -197,3 +198,133 @@ layers:
   - C
   - D
   - E
+  mouse:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp MCLK'
+  - ''
+  - ''
+  - {t: default, h: toggle}
+  - ESC
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&msc SCRL_UP'
+  - '&msc SCRL_LEFT'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_RIGHT'
+  - ''
+  - BSPC
+  - TAB
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&msc SCRL_DOWN'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - ''
+  - ''
+  - LSHFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: default, h: toggle}
+  - '&mkp RCLK'
+  - '&mkp MB4'
+  - '&mkp MB5'
+  - ''
+  - ''
+  - RSHFT
+  - MUTE
+  - LGUI
+  - LALT
+  - LCTRL
+  - ''
+  - RET
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - RCTRL
+  - RALT
+  - RGUI
+  - ENTER
+  - '&mmv MOVE_RIGHT'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  numbers:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - KP NUM
+  - KP DIVIDE
+  - KP MULTIPLY
+  - /
+  - {t: default, h: toggle}
+  - ESC
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - KP 7
+  - KP 8
+  - KP 8
+  - KP PLUS
+  - BSPC
+  - TAB
+  - CUT
+  - COPY
+  - PASTE
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - ''
+  - KP 4
+  - KP 5
+  - KP 6
+  - ','
+  - .
+  - LSHFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: default, h: toggle}
+  - KP 0
+  - KP 1
+  - KP 2
+  - KP 3
+  - RET
+  - RSHFT
+  - MUTE
+  - LGUI
+  - LALT
+  - LCTRL
+  - ''
+  - RET
+  - SPACE
+  - ''
+  - RCTRL
+  - RALT
+  - RGUI
+  - ENTER
+  - '&mmv MOVE_RIGHT'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
