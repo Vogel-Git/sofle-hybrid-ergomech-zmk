@@ -325,18 +325,18 @@
             label = "numbers";
 
             // --------------------------------------------------------------------------------------------------------------
-            // |       |      |     |      |      |      |                  |       |       |   /   |   *   |   -   | BASE  |
+            // |       |      |     |      |      |      |                  |       |  NUM  |   /   |   *   |   -   | BASE  |
             // |  ESC  |      |     |      |      |      |                  |       |   7   |   8   |   9   |   +   | BKSPC |
             // |  TAB  |      |     |      |      |      |                  |       |   4   |   5   |   6   |   ,   |   .   |
             // |  SHFT |      |     |      |      | BASE | MUTE  |  |       |   0   |   1   |   2   |   3   |       | RSHFT |
             //                | GUI | ALT  | CTRL |      | ENTER |  | SPACE |   0   | CTRL  |  ALT  | GUI   |
 
             bindings = <
-&none       &none     &none     &none      &none   &none           &none      &none      &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp FSLH     &to BASE
-&kp ESC     &none     &none     &none      &none   &none           &none      &kp KP_N7  &kp KP_N8      &kp KP_N9        &kp KP_PLUS  &kp BSPC
-&kp TAB     &none     &none     &none      &none   &none           &none      &kp KP_N4  &kp KP_N5      &kp KP_N6        &kp COMMA    &kp DOT
-&kp LSHFT   &none     &none     &none      &none   &to BASE        &kp KP_N0  &kp KP_N1  &kp KP_N2      &kp KP_N3        &none        &kp RSHFT
-&kp C_MUTE  &kp LGUI  &kp LALT  &kp LCTRL  &none   &kp RET         &kp SPACE  &kp KP_N0  &kp RCTRL      &kp RALT         &kp RGUI
+&none       &none     &none     &none      &none   &none           &none      &kp KP_NUM  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp FSLH     &to BASE
+&kp ESC     &none     &none     &none      &none   &none           &none      &kp KP_N7   &kp KP_N8      &kp KP_N9        &kp KP_PLUS  &kp BSPC
+&kp TAB     &none     &none     &none      &none   &none           &none      &kp KP_N4   &kp KP_N5      &kp KP_N6        &kp COMMA    &kp DOT
+&kp LSHFT   &none     &none     &none      &none   &to BASE        &kp KP_N0  &kp KP_N1   &kp KP_N2      &kp KP_N3        &none        &kp RSHFT
+&kp C_MUTE  &kp LGUI  &kp LALT  &kp LCTRL  &none   &kp RET         &kp SPACE  &kp KP_N0   &kp RCTRL      &kp RALT         &kp RGUI
                                                                    &mkp LCLK  &mmv MOVE_RIGHT  &mmv MOVE_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN
             >;
         };
