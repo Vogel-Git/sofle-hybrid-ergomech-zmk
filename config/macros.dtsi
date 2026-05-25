@@ -1,0 +1,158 @@
+/ {
+    macros {
+
+        // Macros   < = alt + 0060    <
+        less_Than: less_Than {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp KP_N3 &kp C>,
+                //<&kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N0>,   < = alt + 0060
+                <&macro_release>,
+                <&kp LALT>;
+        };
+
+        // Macros   > = alt + 0062    >
+        greater_Than: greater_Than {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp KP_N3 &kp E>,
+                //<&kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N2>,   > = alt + 0062
+                <&macro_release>,
+                <&kp LALT>;
+        };
+
+        // Macros   ? = alt + 0063    ?
+        question: question {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp KP_N3 &kp F>,
+                //<&kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N3>,   ? = alt + 0063
+                <&macro_release>,
+                <&kp LALT>;
+        };
+
+        // Macros   | = alt + 0124    |
+        pipe: pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp KP_N7 &kp C>,
+                //<&kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N4>,   | = alt + 0124
+                <&macro_release>,
+                <&kp LALT>;
+        };
+
+        // Macros   Ä
+        uni_ae_k: uni_ae_k {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp C &kp KP_N4>,
+                //<&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6>,   Ä = alt + 0196
+                <&macro_release>,
+                <&kp LALT>;
+        };
+
+        // Macros   Ö
+        uni_oe_k: uni_oe_k {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp KP_N6>,
+                //<&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N4>,   Ö = alt + 0214
+                <&macro_release>,
+                <&kp LALT>;
+        };
+
+        // Macros   Ü
+        uni_ue_k: uni_ue_k {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp C>,
+                //<&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N0>,   Ü = alt + 0220
+                <&macro_release>,
+                <&kp LALT>;
+        };
+
+        // Macros   ä
+        uni_ae_s: uni_ae_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp E &kp KP_N4>,
+                //<&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8>,   ä = alt + 0228
+                <&macro_release>,
+                <&kp LALT>;
+        };
+
+        // Macros   ö
+        uni_oe_s: uni_oe_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp F &kp KP_N6>,
+                //<&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6>,   ö = alt + 0246
+                <&macro_release>,
+                <&kp LALT>;
+        };
+
+        // Macros   ü
+        uni_ue_s: uni_ue_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp F &kp C>,
+                //<&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>,   ü = alt + 0252
+                <&macro_release>,
+                <&kp LALT>;
+        };
+
+        // Macros   ß
+        uni_ss: uni_ss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp F>,
+                //<&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>,   ß = alt + 0223
+                <&macro_release>,
+                <&kp LALT>;
+        };
+    };
+};
