@@ -46,14 +46,6 @@
         };
     };
 
-    behaviors {
-        m_1: m_1 {
-            compatible = "zmk,behavior-mouse-key-press";
-            label = "M_1";
-            #binding-cells = <1>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
