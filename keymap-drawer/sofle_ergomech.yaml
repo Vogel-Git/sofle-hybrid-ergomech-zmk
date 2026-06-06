@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: sofle_ergomech}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', ESC, Q, W, E, R, T, Z, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Y,
+  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
     X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, NUBS, ENTER, '&mmv MOVE_RIGHT', '&mmv MOVE_UP', '&mmv MOVE_LEFT',
     '&mmv MOVE_DOWN']
   lower:
@@ -28,7 +28,7 @@ layers:
   - '9'
   - '0'
   - F12
-  - {t: ▽, type: trans}
+  - TAB
   - '!'
   - '@'
   - '#'
@@ -40,7 +40,7 @@ layers:
   - (
   - )
   - '|'
-  - {t: ▽, type: trans}
+  - LSHFT
   - '='
   - '-'
   - +
@@ -51,18 +51,18 @@ layers:
   - ;
   - ':'
   - \
+  - RSHFT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LGUI
+  - LALT
+  - LCTRL
   - {type: held}
+  - ENTER
+  - SPACE
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RCTRL
+  - RALT
+  - NUBS
   - RET
   - '&mmv MOVE_RIGHT'
   - '&mmv MOVE_UP'
@@ -75,29 +75,29 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - '-'
-  - {t: ▽, type: trans}
+  - ESC
   - INS
   - PSCRN
   - CMENU
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - '~'
   - PG UP
   - HOME
   - UP
   - END
   - ']'
   - '['
-  - {t: ▽, type: trans}
+  - TAB
   - LALT
   - LCTRL
   - LSHFT
-  - {t: ▽, type: trans}
+  - ''
   - CLCK
   - PG DN
   - LEFT
@@ -105,29 +105,29 @@ layers:
   - RIGHT
   - DEL
   - BSPC
-  - {t: ▽, type: trans}
+  - LSHFT
   - UNDO
   - CUT
   - COPY
   - PASTE
-  - {t: ▽, type: trans}
+  - ''
   - {t: numbers, h: toggle}
   - {t: mouse, h: toggle}
+  - ''
+  - ''
+  - ''
+  - RSHFT
   - {t: ▽, type: trans}
+  - LEFT WIN
+  - LALT
+  - LCTRL
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RET
+  - SPACE
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RCTRL
+  - RALT
+  - NUBS
   - RET
   - '&mmv MOVE_RIGHT'
   - '&mmv MOVE_UP'
@@ -285,7 +285,7 @@ layers:
   - ''
   - KP 7
   - KP 8
-  - KP 8
+  - KP 9
   - KP PLUS
   - BSPC
   - TAB
@@ -328,3 +328,10 @@ layers:
   - '&mmv MOVE_UP'
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
+combos:
+- p: [14, 26]
+  k: '&mkp MB1'
+- p: [16, 28]
+  k: '&mkp MB2'
+- p: [15, 27]
+  k: '&mkp MB3'
