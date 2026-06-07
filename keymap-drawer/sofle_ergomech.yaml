@@ -86,7 +86,7 @@ layers:
   - PSCRN
   - CMENU
   - ''
-  - '~'
+  - AltGr+]
   - PG UP
   - HOME
   - UP
