@@ -106,7 +106,7 @@
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none      &kp RA(N7)       &kp RA(N8)    &kp RA(N9)      &kp RA(N0)      &kp MINUS
-&kp ESC     &kp INS       &kp PSCRN     &kp K_CMENU   &none         &kp TILDE     &kp PG_UP  &kp HOME         &kp UP        &kp END         &kp RBKT        &kp LBKT
+&kp ESC     &kp INS       &kp PSCRN     &kp K_CMENU   &none         &kp RA(RBKT)  &kp PG_UP  &kp HOME         &kp UP        &kp END         &kp RBKT        &kp LBKT
 &kp TAB     &kp LALT      &kp LCTRL     &kp LSHFT     &none         &kp CLCK      &kp PG_DN  &kp LEFT         &kp DOWN      &kp RIGHT       &kp DEL         &kp BSPC
 &kp LSHFT   &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &none         &to 5      &to 4            &none         &none           &none           &kp RSHFT
 &trans      &kp LEFT_WIN  &kp LALT      &kp LCTRL     &trans        &kp RET       &kp SPACE  &trans           &kp RCTRL     &kp RALT        &kp NUBS
