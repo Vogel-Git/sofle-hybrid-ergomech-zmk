@@ -44,6 +44,11 @@
             bindings = <&mkp MB3>;
             key-positions = <15 27>;
         };
+
+        NUM_DIVIDE {
+            bindings = <&kp KP_DIVIDE>;
+            key-positions = <7 19>;
+        };
     };
 
     keymap {
