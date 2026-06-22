@@ -411,6 +411,12 @@ path.combo {
 <tspan x="196" dy="-0.6em">&amp;mkp</tspan><tspan x="196" dy="1.2em">MB3</tspan>
 </text>
 </g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="574" y="51" width="28" height="26" class="combo"/>
+<text x="588" y="64" class="combo tap">
+<tspan x="588" dy="-0.6em">KP</tspan><tspan x="588" dy="1.2em">DIVIDE</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 521)" class="layer-lower">
@@ -695,6 +701,12 @@ path.combo {
 <rect rx="6" ry="6" x="182" y="99" width="28" height="26" class="combo"/>
 <text x="196" y="112" class="combo tap">
 <tspan x="196" dy="-0.6em">&amp;mkp</tspan><tspan x="196" dy="1.2em">MB3</tspan>
+</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="574" y="51" width="28" height="26" class="combo"/>
+<text x="588" y="64" class="combo tap">
+<tspan x="588" dy="-0.6em">KP</tspan><tspan x="588" dy="1.2em">DIVIDE</tspan>
 </text>
 </g>
 </g>
@@ -991,6 +1003,12 @@ path.combo {
 <rect rx="6" ry="6" x="182" y="99" width="28" height="26" class="combo"/>
 <text x="196" y="112" class="combo tap">
 <tspan x="196" dy="-0.6em">&amp;mkp</tspan><tspan x="196" dy="1.2em">MB3</tspan>
+</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="574" y="51" width="28" height="26" class="combo"/>
+<text x="588" y="64" class="combo tap">
+<tspan x="588" dy="-0.6em">KP</tspan><tspan x="588" dy="1.2em">DIVIDE</tspan>
 </text>
 </g>
 </g>
@@ -1302,6 +1320,12 @@ path.combo {
 <tspan x="196" dy="-0.6em">&amp;mkp</tspan><tspan x="196" dy="1.2em">MB3</tspan>
 </text>
 </g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="574" y="51" width="28" height="26" class="combo"/>
+<text x="588" y="64" class="combo tap">
+<tspan x="588" dy="-0.6em">KP</tspan><tspan x="588" dy="1.2em">DIVIDE</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 2083)" class="layer-mouse">
@@ -1595,6 +1619,12 @@ path.combo {
 <rect rx="6" ry="6" x="182" y="99" width="28" height="26" class="combo"/>
 <text x="196" y="112" class="combo tap">
 <tspan x="196" dy="-0.6em">&amp;mkp</tspan><tspan x="196" dy="1.2em">MB3</tspan>
+</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="574" y="51" width="28" height="26" class="combo"/>
+<text x="588" y="64" class="combo tap">
+<tspan x="588" dy="-0.6em">KP</tspan><tspan x="588" dy="1.2em">DIVIDE</tspan>
 </text>
 </g>
 </g>
@@ -1898,6 +1928,12 @@ path.combo {
 <rect rx="6" ry="6" x="182" y="99" width="28" height="26" class="combo"/>
 <text x="196" y="112" class="combo tap">
 <tspan x="196" dy="-0.6em">&amp;mkp</tspan><tspan x="196" dy="1.2em">MB3</tspan>
+</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="574" y="51" width="28" height="26" class="combo"/>
+<text x="588" y="64" class="combo tap">
+<tspan x="588" dy="-0.6em">KP</tspan><tspan x="588" dy="1.2em">DIVIDE</tspan>
 </text>
 </g>
 </g>

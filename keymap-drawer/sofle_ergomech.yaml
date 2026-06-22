@@ -335,3 +335,5 @@ combos:
   k: '&mkp MB2'
 - p: [15, 27]
   k: '&mkp MB3'
+- p: [7, 19]
+  k: KP DIVIDE
