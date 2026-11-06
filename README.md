@@ -1,3 +1,77 @@
+# Sofle Hybrid German
+
+## German keymap
+With Mouse & Numbers layer.Is based on master. Date: 06.11.2026
+
+`With Mouse & Numbers layer `  
+`Based on master`  
+`Date: 06.10.2026`  
+
+
+![Default Keymap](keymap-drawer/DE_sofle_ergomech.svg)
+
+## Die keys die für Deutsche Tastatur simulation
+
+
+#### default_layer
+| default       | EN     | DE     |
+|:--------------|:-------|:-------|
+| &kp GRAVE     | `      | ^      |
+| &kp Y         | Y      | Z      |
+| &kp Z         | Z      | Y      |
+| &kp MINUS     |        | ß      |
+| &kp SEMI      | ;      | Ö      |
+| &kp SQT       | '      | Ä      |
+| &kp FSLH      | /      | -      |
+| &kp NUBS      | < > \| | < > \| |
+
+
+#### lower_layer
+| lower         | EN     | DE     |
+|:--------------|:-------|--------|
+| &kp AT        | @      | "      |
+| &kp HASH      | #      | §      |
+| &kp CARET     | ^      | &      |
+| &kp AMPS      | &      | /      |
+| &kp ASTRK     | *      | (      |
+| &kp LPAR      | (      | )      |
+| &kp RPAR      | )      | =      |
+| &kp PIPE      | '      | \|     |
+| &kp NUBS      | < > \| | < > \| |
+| &kp EQUAL     | =      | ´      |
+| &kp MINUS     | -      | ß      |
+| &kp PLUS      | +      | `      |
+| &kp LBRC      | {      | Ü      |
+| &kp RBRC      | }      | *      |
+| &kp LBKT      | [      | ü      |
+| &kp SEMI      | ;      | ö      |
+| &kp COLON     | :      | Ö      |
+| &kp BSLH      | \      | #      |
+
+
+#### raise_layer
+| raise         | EN     | DE     | 
+|---------------|--------|--------|
+| &kp RA(N7)    |        | {      |
+| &kp RA(N8)    |        | [      |
+| &kp RA(N9)    |        | ]      |
+| &kp RA(N0)    |        | }      |
+| &kp RA(RBKT)  |        | ~      |
+| &kp RBKT      |        | + * ~  |
+| &kp LBKT      |        | ü      |
+
+
+################################################################################################################################################
+# Sofle Hybrid German
+
+## German keymap
+With Mouse & Numbers layer 
+Based on master
+Date: 06.11.2026
+
+![Default Keymap](keymap-drawer/DE_sofle_ergomech.svg)
+
+
 # Sofle Hybrid Keyboard Firmware
 
 [![Build Status](../../actions/workflows/build.yml/badge.svg)](../../actions)
